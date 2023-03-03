@@ -74,7 +74,6 @@ def calculates_results_stats(results_dic):
     
     # Sets all counters to initial values of zero so that they can 
     # be incremented while processing through the images in results_dic 
-    results_stats_dic['n_images'] = 0
     results_stats_dic['n_dogs_img'] = 0
     results_stats_dic['n_notdogs_img'] = 0
     results_stats_dic['n_match'] = 0
@@ -189,4 +188,4 @@ def calculates_results_stats(results_dic):
         
     # TODO 5f. REPLACE None with the results_stats_dic dictionary that you 
     # created with this function 
-    return None
+    return results_stats_dic

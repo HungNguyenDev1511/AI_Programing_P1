@@ -65,11 +65,10 @@ def get_pet_labels(image_dir):
            pet_image = in_files[idx]
            low_pet_image = pet_image.lower()
            word_list_pet_image  = low_pet_image.split("_")
-           pet_name = ""
            for word in word_list_pet_image:
                if word.isalpha():
-                   pet_name += word + " "
-           pet_name = pet_name.strip()
+                   pet_label += word + " "
+           pet_label = pet_label.strip()
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates 
            # duplicate files (filenames)
