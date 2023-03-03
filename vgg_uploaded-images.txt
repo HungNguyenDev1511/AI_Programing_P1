@@ -1,0 +1,55 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:            fox_squirrel_01.jpg  label:                           
+ 2 key:       Boston_terrier_02285.jpg  label:                           
+ 3 key:            Dalmatian_04017.jpg  label:                           
+ 4 key:                  skunk_029.jpg  label:                           
+{'fox_squirrel_01.jpg': ['', 'fox squirrel, eastern fox squirrel, sciurus niger', 1], 'Boston_terrier_02285.jpg': [''], 'Dalmatian_04017.jpg': [''], 'skunk_029.jpg': ['']}
+{'fox_squirrel_01.jpg': ['', 'fox squirrel, eastern fox squirrel, sciurus niger', 1], 'Boston_terrier_02285.jpg': ['', 'boston bull, boston terrier', 1], 'Dalmatian_04017.jpg': [''], 'skunk_029.jpg': ['']}
+{'fox_squirrel_01.jpg': ['', 'fox squirrel, eastern fox squirrel, sciurus niger', 1], 'Boston_terrier_02285.jpg': ['', 'boston bull, boston terrier', 1], 'Dalmatian_04017.jpg': ['', 'dalmatian, coach dog, carriage dog', 1], 'skunk_029.jpg': ['']}
+{'fox_squirrel_01.jpg': ['', 'fox squirrel, eastern fox squirrel, sciurus niger', 1], 'Boston_terrier_02285.jpg': ['', 'boston bull, boston terrier', 1], 'Dalmatian_04017.jpg': ['', 'dalmatian, coach dog, carriage dog', 1], 'skunk_029.jpg': ['', 'skunk, polecat, wood pussy', 1]}
+
+     MATCH:
+
+           fox_squirrel_01.jpg: 
+Real:                              Classifier: fox squirrel, eastern fox squirrel, sciurus niger
+
+      Boston_terrier_02285.jpg: 
+Real:                              Classifier:    boston bull, boston terrier
+
+           Dalmatian_04017.jpg: 
+Real:                              Classifier: dalmatian, coach dog, carriage dog
+
+                 skunk_029.jpg: 
+Real:                              Classifier:     skunk, polecat, wood pussy
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
+
+     MATCH:
+
+           fox_squirrel_01.jpg: 
+Real:                              Classifier: fox squirrel, eastern fox squirrel, sciurus niger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+      Boston_terrier_02285.jpg: 
+Real:                              Classifier:    boston bull, boston terrier  
+PetLabelDog: 0  ClassLabelDog: 1
+
+           Dalmatian_04017.jpg: 
+Real:                              Classifier: dalmatian, coach dog, carriage dog  
+PetLabelDog: 0  ClassLabelDog: 1
+
+                 skunk_029.jpg: 
+Real:                              Classifier:     skunk, polecat, wood pussy  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
