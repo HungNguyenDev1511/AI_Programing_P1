@@ -110,14 +110,10 @@ def calculates_results_stats(results_dic):
         # Pet Image Label is a Dog - counts number of dog images
         if results_dic[key][3] == 1:
             results_stats_dic['n_dogs_img'] += 1
-        else:
-            results_stats_dic['n_notdogs_img'] += 1
-            
-            
             # Classifier classifies image as Dog (& pet image is a dog)
             # counts number of correct dog classifications
-        if results_dic[key][4] == 1:
-            results_stats_dic['n_correct_dogs'] += 1
+            if results_dic[key][4] == 1:
+                results_stats_dic['n_correct_dogs'] += 1
 
         # TODO: 5b. REPLACE pass with CODE that counts how many pet images 
         #           that are NOT dogs were correctly classified. This happens 
